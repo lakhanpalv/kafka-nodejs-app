@@ -4,7 +4,7 @@ const connection = new WebSocket(url);
 
 
 connection.onopen = () => {
-  connection.send('Test-express-topic-2');
+  connection.send('test-express-ws-topic');
 }
 
 connection.onerror = (error) => {

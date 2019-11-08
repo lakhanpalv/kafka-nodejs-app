@@ -10,7 +10,7 @@ const expressWS = require('express-ws')(app);
 
 //middleware
 app.use(bodyParser.json());
-app.use('/admin-client/create-topic',adminRoute);
+app.use('/admin-client',adminRoute);
 app.use('/producer', producerRoute);
 app.use('/consumer', consumerRoute);
 
